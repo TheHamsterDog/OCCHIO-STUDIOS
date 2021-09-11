@@ -1,51 +1,12 @@
-.control2:checked ~ .image2 {
-  left: 33%;
-  width: 32%;
-  top: 100%;
-  z-index: 4;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.control1:checked ~ .image1 {
-  left: 33%;
-  width: 32%;
-  top: 100%;
-  z-index: 4;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.control1:checked ~ .image2 {
-  left: 0;
-  width: 32%;
-  position: absolute;
-  top: 100%;
-  transform: translate(-50%, -50%);
-}
-
-.control3:checked ~ .image3 {
-  left: 33%;
-  width: 32%;
-  top: 100%;
-  z-index: 4;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.control3:checked ~ .image2 {
-  width: 32%;
-  left: 66%;
-  top: 100%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+.carousel {
+  height: 396px;
 }
 
 .image-instagram {
   image-rendering: pixelated;
   left: 33%;
-  width: 32%;
-  top: 100%;
+  width: 40%;
+  top: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
 }
@@ -54,37 +15,62 @@
   top: 100%;
   display: none;
 }
-.image1 {
-  cursor: pointer;
-  image-rendering: pixelated;
-  transition: all 0.2s;
-  left: 0;
-  width: 32%;
-  position: absolute;
-  top: 100%;
-  transform: translate(-50%, -50%);
-}
-.image2 {
+.image-center {
   cursor: pointer;
   image-rendering: pixelated;
   transition: all 0.2s;
   left: 33%;
-  width: 32%;
-  top: 100%;
+  width: 34%;
   position: absolute;
+  top: 43%;
   transform: translate(-50%, -50%);
 }
-.image3 {
+.image-left {
   cursor: pointer;
   image-rendering: pixelated;
   transition: all 0.2s;
+  left: -2%;
   width: 32%;
-  left: 66%;
-  top: 100%;
-  transform: translate(-50%, -50%);
   position: absolute;
+  top: 43%;
+  transform: translate(-50%, -50%);
 }
-
+.image-right {
+  cursor: pointer;
+  image-rendering: pixelated;
+  transition: all 0.2s;
+  left: 69%;
+  width: 32%;
+  position: absolute;
+  top: 43%;
+  transform: translate(-50%, -50%);
+}
+.image-rextend {
+  cursor: pointer;
+  image-rendering: pixelated;
+  transition: all 0.2s;
+  left: 87%;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  width: 32%;
+  position: absolute;
+  top: 43%;
+  transform: translate(-50%, -50%);
+}
+.image-lextend {
+  cursor: pointer;
+  image-rendering: pixelated;
+  transition: all 0.2s;
+  left: -36%;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  width: 32%;
+  position: absolute;
+  top: 43%;
+  transform: translate(-50%, -50%);
+}
+.image-back {
+  left: -100%;
+  display: none;
+}
 .navbar {
   position: fixed;
   top: 0;
